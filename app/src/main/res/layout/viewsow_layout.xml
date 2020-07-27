@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:id="@+id/cvsowitem"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sow_id"
+            android:text=" Sow Id"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/breed"
+            android:text="Breed"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/sow_id"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/color"
+            android:text="Color"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/breed"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:text=" Age "
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/color"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight"
+            android:text=" Weight"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/age"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/service"
+            android:text=" Service Record "
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/weight"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boar"
+            android:text=" Mating Boar"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/service"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text=" Mating Date"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/boar"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/days"
+            android:text="Remaining Days"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/date"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

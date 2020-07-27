@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cvfinance">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutfinance">
+
+
+        <TextView
+            android:id="@+id/finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="FINANCES"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:layout_marginStart="100dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD EXPENSES"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:id="@+id/addexpense"
+        android:layout_below="@+id/finance"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW EXPENSES"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:id="@+id/viewexpense"
+            android:layout_below="@+id/addexpense"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD SALES"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:id="@+id/addsales"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/viewexpense"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW SALES"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:id="@+id/viewsales"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/addsales"/>
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cvpigs"
+        android:layout_below="@id/cvfinance">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutpigs"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PIGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="PIGS"
+            android:textSize="30sp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:layout_marginStart="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELL PIG"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sellpig"
+            android:layout_below="@+id/PIGS"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add SOW"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addsow"
+            android:layout_below="@+id/sellpig"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW SOW'S"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewsow"
+            android:layout_below="@+id/addsow"/>
+
+        <Button
+            android:id="@+id/addboar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ADD BOAR"
+            android:textSize="15sp"
+            android:layout_below="@+id/viewsow"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW BOAR'S"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/viewboar"
+            android:layout_below="@+id/addboar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW Pigs on sale"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/pigsonsale"
+            android:layout_below="@+id/viewboar"/>
+
+    </RelativeLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

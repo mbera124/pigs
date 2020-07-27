@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:id="@+id/cvsalesitem"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="Date of Sale"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:text="Type of Sale"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/date"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amount"
+            android:text="Amount Received"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_below="@+id/type"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
